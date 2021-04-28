@@ -4,17 +4,17 @@
   <aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
       <a href="#">
-        <img src="assets/images/products/logo.png" alt="luv2shop" class="img-responsive">
+        <img src="assets/images/products/logo.png" alt="shopping image" class="img-responsive">
       </a>
     </div>
     <div class="menu-sidebar-content js-scrollbar1">
       <nav class="navbar-sidebar">
         <ul class="list-unstyled navbar-list">
           <li>
-            <a href="#">Books</a>
+            <a routerLink="/category/1" routerLinkActive="active-link">Books</a>
           </li>
           <li>
-            <a href="#">Coffee Mugs</a>
+            <a routerLink="/category/2" routerLinkActive="active-link">Coffee Mugs</a>
           </li>
           <li>
             <a href="#">Mouse Pads</a>
@@ -54,7 +54,11 @@
     <!-- END HEADER DESKTOP-->
 
     <!-- MAIN CONTENT-->
-    <app-product-list></app-product-list>
+    <!-- It renders the desired component based on the route IN THIS LOCATION -->
+    <router-outlet></router-outlet>
+
+   
+
 
   </div>
 </div>
